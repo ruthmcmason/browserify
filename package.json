@@ -4,7 +4,7 @@
   "description": "browserify practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "watch": "watchify assets/scripts/main.js -t babelify -o dist/bundle.js -d"
   },
   "author": "",
   "license": "ISC",
