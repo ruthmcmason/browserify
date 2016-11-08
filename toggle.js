@@ -1,9 +1,8 @@
 var $ = require('jquery');
 
 exports.toggle = function () {
-  $('.toggle').click(function () {
-    $("#data2toggle").toggle("slow", function () {
-      
-    });
+  $("[data-toggle]").on("click", function () {
+    var data2toggle = $(this).data("toggle");
+    $(data2toggle).toggle();
   });
   }
