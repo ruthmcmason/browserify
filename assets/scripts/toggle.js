@@ -1,4 +1,3 @@
-
 module.exports = function () {
   $("[data-toggle]").on("click", function () {
     var data2toggle = $(this).data("toggle");
