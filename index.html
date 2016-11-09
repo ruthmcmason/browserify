@@ -7,26 +7,28 @@
   </head>
   <body>
     <div class="container">
-      <h2>Welcome to the Browserify Button</h2>
-
-        <button data-toggle="#toggle">
-          Simple Toggle Text
-        </button>
-
-        <button data-toggle="#toggle" data-speed="slow">
-          Slow Toggle Text
-        </button>
-
-        <button data-toggle="#toggle" data-speed="fast">
-          Fast Toggle Text
-        </button>
-
-        <button data-slide="#slidetoggle" data-speed="5000">
-          Slide Toggle Pigs
-        </button>
-
-        <p id="toggle">text to toggle</p>
-        <img src="img/pigs.jpg" id="slidetoggle" class="block">
+      <h2>Welcome to the Browserify Buttons</h2>
+      <button data-toggle="#toggle">
+        Simple Toggle Text
+      </button>
+      <button data-toggle="#toggle" data-speed="slow">
+        Slow Toggle Text
+      </button>
+      <button data-toggle="#toggle" data-speed="fast">
+        Fast Toggle Text
+      </button>
+      <button data-slide="#slidetoggle" data-speed="5000">
+        Slide Toggle Square
+      </button>
+      <button data-move=".square" data-direction="left" data-length="50px">
+        <<
+      </button>
+      <button data-move=".square" data-direction="right" data-length="50px">
+        >>
+      </button>
+      <p id="toggle">text to toggle</p>
+      <div id="slidetoggle" class="square">
+      </div>
       </div>
     </div>
   <script src='dist/bundle.js'></script>

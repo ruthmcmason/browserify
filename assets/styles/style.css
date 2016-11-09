@@ -1,3 +1,7 @@
-.block {
-  display: block;  
+.square {
+  display: block;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  background-color: #00aeef;
 }

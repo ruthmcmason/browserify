@@ -1,5 +1,3 @@
-var $ = require('jquery');
-
 
 module.exports = function () {
   $("[data-toggle]").on("click", function () {
