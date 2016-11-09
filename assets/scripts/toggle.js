@@ -1,24 +1,20 @@
 var $ = require('jquery');
 
 
-exports.toggle = function () {
+module.exports = function () {
   $("[data-toggle]").on("click", function () {
     var data2toggle = $(this).data("toggle");
-    var speed = $(this).attr("toggle-speed");
+    var speed = $(this).data("speed");
     $(data2toggle).each(function () {
           $(this).toggle(speed);
-
     });
   });
 
   $("[data-slide]").on("click", function () {
-    var data22toggle = $(this).data("slide");
-    var sspeed = $(this).data("speed");
-  
-    $(data22toggle).each(function () {
-          $(this).slideToggle(sspeed);
-
+    var data2toggle = $(this).data("slide");
+    var speed = $(this).data("speed");
+    $(data2toggle).each(function () {
+          $(this).slideToggle(speed);
     });
-    console.log(sspeed);
   });
 }

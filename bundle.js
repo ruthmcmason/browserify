@@ -1,1 +1,0 @@
-console.error("Error: Cannot find module '/Users/ruthmason/Documents/PROJECTS/browserify/main.js' from '/Users/ruthmason/Documents/PROJECTS/browserify'");
