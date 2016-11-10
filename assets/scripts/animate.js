@@ -1,18 +1,20 @@
 module.exports = function () {
-
   $("[data-move]").on("click", function () {
-    var data = $(this).data("move");
-    var direction = $(this).data("direction");
-    var length = $(this).data("length");
-    if(direction == "left" || "right") {
-      var dir = "left";
+    var element = $(this).data("move");
+    var dir = $(this).data("direction");
+    var dist = $(this).data("distance");
+    if((dir === "left") || (dir === "right")) {
+      var direction = "left";
     }
-    else {
-      var dir = "top";
+    else if (dir === "up") {
+      var direction = "top";
+    }
+    else if (dir === "down") {
+      var direction ="bottom";
     }
     var animation = {};
-    animation[dir] = length;
-    $(this).animate( animation, "slow");
-    console.log(animation);
+    animation[direction] = dist;
+    $(element).animate({animation}, "slow");
+    log(animation);
   });
 }
