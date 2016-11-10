@@ -14,7 +14,7 @@ module.exports = function () {
     }
     var animation = {};
     animation[direction] = dist;
-    $(element).animate({animation}, "slow");
+    $(element).animate(animation, "slow");
     log(animation);
   });
 }
